@@ -1,0 +1,16 @@
+type Query {
+  getFree2: [Free2!]!
+}
+
+# type Query {
+#   getFree2(
+#     searchValue: String!
+#     limit: Int!
+#     currentPage: Int!
+#   ): [Free2!]!
+
+type Mutation {
+  createFree2(title: String!, description: String!, userId: String!): Boolean!
+  deleteFree2(id: String!): Boolean!
+  updateFree2(id: String!, title: String!, description: String!): Boolean!
+}

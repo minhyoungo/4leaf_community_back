@@ -1,0 +1,32 @@
+type Popular {
+  _id: ID!
+  title: String!
+  description: String!
+  createdAt: String!
+  author: [User!]!
+}
+
+type Free1 {
+  _id: ID!
+  title: String!
+  description: String!
+  createdAt: String!
+  author: [User!]!
+}
+
+type Free2 {
+  _id: ID!
+  title: String!
+  description: String!
+  createdAt: String!
+  author: [User!]!
+}
+
+type User {
+  _id: ID!
+  # notice: [Notice!]!
+  email: String!
+  userName: String!
+  mobile: String!
+  createdAt: String!
+}
