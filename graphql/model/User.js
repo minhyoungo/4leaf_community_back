@@ -4,17 +4,21 @@ const Schema = mongoose.Schema;
 
 const User = new Schema(
   {
-    notice: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Notice",
-      },
-    ],
+    // notice: [
+    //   {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "Notice",
+    //   },
+    // ],
     userName: {
       type: String,
       required: true,
     },
-    userPassword: {
+    nickName: {
+      type: String,
+      required: true,
+    },
+    mobile: {
       type: String,
       required: true,
     },
@@ -25,6 +29,11 @@ const User = new Schema(
     createdAt: {
       type: String,
       required: true,
+    },
+    secretCode: {
+      type: String,
+      required: true,
+      default: "-",
     },
   },
   { versionKey: false }

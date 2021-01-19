@@ -1,4 +1,4 @@
-import Popular from "../../../../model/Popular";
+import Popular from "../../../model/Popular";
 
 export default {
   Query: {

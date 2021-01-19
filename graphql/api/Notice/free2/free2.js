@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Free2 from "../../../../model/Free2";
+import Free2 from "../../../model/Free2";
 import { CURRENT_TIME } from "../../../../utils/commonUtils";
 
 export default {

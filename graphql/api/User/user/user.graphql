@@ -1,12 +1,19 @@
+type LoginResult {
+  # 데이터타입
+  result: Boolean!
+  objectId: String!
+}
+
 type Mutation {
   registUser(
     # 프론트와 백은 같은 조건을 유지해야한다.(MM05Qeries)
-    notice: [Notice!]!
+    # notice: [Notice!]!
     userName: String!
     email: String!
-    mobile: String!
-    createdAt: String!
+    mobile: String! # createdAt: String!
   ): Boolean!
 
   tryLogin(email: String!): Boolean!
+
+  checkSecretCode(email: String!, code: String!): LoginResult!
 }

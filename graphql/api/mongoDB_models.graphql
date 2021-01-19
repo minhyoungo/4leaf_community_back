@@ -27,6 +27,16 @@ type User {
   # notice: [Notice!]!
   email: String!
   userName: String!
+  secretCode: String!
+
   mobile: String!
   createdAt: String!
+}
+
+type Notice {
+  _id: ID!
+  title: String!
+  description: String!
+  createdAt: String!
+  author: [User!]!
 }
