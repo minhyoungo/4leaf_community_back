@@ -1,7 +1,5 @@
 type Query {
-  viewAllNotice: # currentPage: Int! # limit: Int! # searchValue: String! # (
-  # )
-  [Notice!]!
+  viewAllNotice: [Notice!]! # ) # currentPage: Int! # limit: Int! # searchValue: String! # (
   getNoticeBoardDetail(id: String!): Notice!
   getNoticeBoardNextId(id: String!): Notice
   getNoticeBoardBeforeId(id: String!): Notice!
