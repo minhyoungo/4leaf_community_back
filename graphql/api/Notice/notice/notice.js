@@ -2,7 +2,6 @@ import Notice from "../../../model/Notice";
 import mongoose from "mongoose";
 import { CURRENT_TIME } from "../../../../utils/commonUtils";
 import User from "../../../model/User";
-
 export default {
   Query: {
     viewAllNotice: async (_, args) => {

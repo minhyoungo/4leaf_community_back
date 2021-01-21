@@ -1,13 +1,11 @@
 type Query {
-  getFree1: [Free1!]!
+  getAllFree1: [Free1!]! # ) # currentPage: Int! # limit: Int! # searchValue: String! # (
+  getFree1BoardDetail(id: String!): Free1!
+  getFree1BoardNextId(id: String!): Free1
+  getFree1BoardBeforeId(id: String!): Free1
+  getFree1BoardTotalPage(searchValue: String!, limit: Int!): Int!
+  getFree1BoardTotalPageOnlyCnt(searchValue: String!, limit: Int!): Int!
 }
-
-# type Query {
-#   getFree1(
-#     searchValue: String!
-#     limit: Int!
-#     currentPage: Int!
-#   ): [Free1!]!
 
 type Mutation {
   createFree1(title: String!, description: String!, userId: String!): Boolean!

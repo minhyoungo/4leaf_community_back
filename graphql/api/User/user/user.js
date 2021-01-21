@@ -139,22 +139,13 @@ export default {
               $set: { secretCode: `` },
             }
           );
-          return {
-            result: true,
-            objectId: tryUser._id,
-          };
+          return true;
         } else {
-          return {
-            result: false,
-            objectId: "-",
-          };
+          return false;
         }
       } catch (e) {
         console.log(e);
-        return {
-          result: false,
-          objectId: "-",
-        };
+        return false;
       }
     },
   },
